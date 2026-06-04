@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>每日诗词</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.loli.net">
+<link href="https://fonts.loli.net/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -363,7 +363,7 @@ body.default       { background: linear-gradient(160deg, #1a1a2e 0%, #0f0f20 100
 <script>
 let poems = [];
 let currentIndex = 0;
-let onlinePoems = []; // 从网络获取的诗词
+let allPoems = []; // 完整诗词库（从 data.json 加载）
 
 function createPetals() {
   const container = document.getElementById('petals');
@@ -432,26 +432,19 @@ function renderPoem(index) {
   `;
 }
 
-async function fetchNext() {
-  const card = document.getElementById('card');
-  card.innerHTML = '<div class="loading">正在挑选新的诗词</div>';
-  document.body.className = 'default';
-
-  try {
-    const res = await fetch(`${API_URL}?offset=${apiOffset}`);
-    const data = await res.json();
-    if (data.error) throw new Error(data.error);
-    apiOffset++;
-    poems.push(data);
+function fetchNext() {
+  // 从本地诗词库中随机选取一首
+  if (allPoems.length === 0) return;
+  let next;
+  do { next = Math.floor(Math.random() * allPoems.length); } while (next === currentIndex && allPoems.length > 1);
+  const poem = allPoems[next];
+  // 如果这首诗还没在当前列表中，加入
+  const idx = poems.findIndex(p => p.title === poem.title && p.author === poem.author);
+  if (idx >= 0) {
+    renderPoem(idx);
+  } else {
+    poems.push(poem);
     renderPoem(poems.length - 1);
-  } catch (e) {
-    if (poems.length > 1) {
-      let next;
-      do { next = Math.floor(Math.random() * poems.length); } while (next === currentIndex && poems.length > 1);
-      renderPoem(next);
-    } else {
-      card.innerHTML = '<div style="opacity:0.8">获取失败，请稍后再试</div>';
-    }
   }
 }
 
@@ -575,10 +568,21 @@ function downloadCard() {
 async function init() {
   const card = document.getElementById('card');
   try {
+    // 加载每日推荐
     const res = await fetch('data.json');
     const data = await res.json();
     poems = data.poems || [];
     poems._date = data.date;
+
+    // 加载完整诗词库（供"换一首"使用）
+    try {
+      const allRes = await fetch('poems_all.json');
+      const allData = await allRes.json();
+      allPoems = allData.poems || poems;
+    } catch(e) {
+      allPoems = [...poems]; // 降级：用每日推荐
+    }
+
     if (poems.length === 0) {
       card.innerHTML = '<div style="opacity:0.8">今日诗词还未生成，请稍后再来</div>';
       return;

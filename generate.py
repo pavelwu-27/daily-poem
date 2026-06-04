@@ -86,10 +86,21 @@ def generate_daily_data(count=50):
         "poems": poems,
     }
 
+    # 输出每日推荐
     with open("docs/data.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
+    # 输出完整诗词库（供"换一首"使用）
+    all_result = {
+        "date": date_display,
+        "generated_at": now.isoformat(),
+        "poems": all_poems,
+    }
+    with open("docs/poems_all.json", "w", encoding="utf-8") as f:
+        json.dump(all_result, f, ensure_ascii=False)
+
     print(f"Generated {len(poems)} poems for {date_display}")
+    print(f"Full poem library: {len(all_poems)} poems")
     return result
 
 
