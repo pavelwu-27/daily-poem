@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日诗词</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif SC', serif;
+  transition: background 1.2s ease;
+  overflow-x: hidden;
+}
+
+/* 深色水墨背景 */
+body.yearning      { background: linear-gradient(160deg, #1a1a2e 0%, #16213e 100%); }
+body.parting       { background: linear-gradient(160deg, #2d1b36 0%, #1a1423 100%); }
+body.pastoral      { background: linear-gradient(160deg, #1b2e1b 0%, #0f1f0f 100%); }
+body.landscape     { background: linear-gradient(160deg, #1c2a3a 0%, #0f1923 100%); }
+body.love          { background: linear-gradient(160deg, #3a1c1c 0%, #2a0f0f 100%); }
+body.spring        { background: linear-gradient(160deg, #2e1a2e 0%, #1f0f1f 100%); }
+body.autumn        { background: linear-gradient(160deg, #2e2618 0%, #1f1a0f 100%); }
+body.contemplation { background: linear-gradient(160deg, #1a2e2e 0%, #0f1f1f 100%); }
+body.historical    { background: linear-gradient(160deg, #2e2218 0%, #1f180f 100%); }
+body.nostalgia     { background: linear-gradient(160deg, #1e2030 0%, #141828 100%); }
+body.heroic        { background: linear-gradient(160deg, #2a1a1a 0%, #1a0f0f 100%); }
+body.graceful      { background: linear-gradient(160deg, #261a2e 0%, #1a0f20 100%); }
+body.zen           { background: linear-gradient(160deg, #1a1a1a 0%, #111111 100%); }
+body.solitude      { background: linear-gradient(160deg, #141828 0%, #0a0f1a 100%); }
+body.freedom       { background: linear-gradient(160deg, #1a2838 0%, #0f1a28 100%); }
+body.time          { background: linear-gradient(160deg, #2a1a28 0%, #1a0f18 100%); }
+body.dream         { background: linear-gradient(160deg, #1a1a30 0%, #0f0f20 100%); }
+body.healing       { background: linear-gradient(160deg, #1e2a1e 0%, #121a12 100%); }
+body.frontier      { background: linear-gradient(160deg, #2a2018 0%, #1a1410 100%); }
+body.night         { background: linear-gradient(160deg, #0f1420 0%, #0a0e18 100%); }
+body.default       { background: linear-gradient(160deg, #1a1a2e 0%, #0f0f20 100%); }
+
+/* 水墨晕染层 */
+.ink-wash {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+  pointer-events: none;
+  animation: drift 15s ease-in-out infinite;
+}
+.ink-wash-1 { width: 600px; height: 600px; top: -200px; left: -150px; background: rgba(200,190,170,0.3); }
+.ink-wash-2 { width: 450px; height: 450px; bottom: -120px; right: -120px; background: rgba(200,190,170,0.2); animation-delay: -7s; }
+.ink-wash-3 { width: 250px; height: 250px; top: 40%; right: 15%; background: rgba(200,190,170,0.12); animation-delay: -4s; }
+
+@keyframes drift {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.02); }
+}
+
+/* 花瓣粒子 */
+.petals {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.petal {
+  position: absolute;
+  width: 6px; height: 10px;
+  background: rgba(255,245,230,0.2);
+  border-radius: 50% 0 50% 0;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  from { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 0.5; }
+  to { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+}
+
+/* 卡片 — 宣纸质感 */
+.card {
+  background: rgba(245,240,230,0.06);
+  border: 1px solid rgba(200,190,170,0.15);
+  border-radius: 4px;
+  padding: 56px 64px 48px;
+  max-width: 560px;
+  width: 92%;
+  text-align: center;
+  color: #f5f0e8;
+  position: relative;
+  z-index: 1;
+  animation: cardIn 1s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3),
+              inset 0 1px 0 rgba(200,190,170,0.1);
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(30px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* 顶部朱红线 */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 80px; height: 2px;
+  background: rgba(194,58,43,0.6);
+}
+
+/* 日期+主题 */
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #d4c9b8;
+}
+
+.meta .dot {
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: rgba(194,58,43,0.5);
+}
+
+.meta .theme-tag {
+  padding: 3px 14px;
+  border: 1px solid rgba(194,58,43,0.4);
+  border-radius: 2px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: rgba(194,58,43,0.8);
+}
+
+/* 诗词正文 — 毛笔书法 */
+.poem-lines {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 26px;
+  line-height: 2.4;
+  margin-bottom: 36px;
+  min-height: 160px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #f5f0e8;
+}
+
+.poem-lines .line {
+  opacity: 0;
+  animation: lineIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes lineIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 印章 */
+.seal {
+  display: inline-block;
+  border: 2px solid rgba(194,58,43,0.6);
+  color: rgba(194,58,43,0.7);
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 14px;
+  padding: 6px 4px;
+  line-height: 1.3;
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
+  margin-bottom: 32px;
+  user-select: none;
+}
+
+/* 诗词信息 */
+.poem-info {
+  border-top: 1px solid rgba(200,190,170,0.12);
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.poem-title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #f5f0e8;
+}
+
+.poem-author {
+  font-size: 14px;
+  opacity: 0.55;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #d4c9b8;
+}
+
+.poem-category {
+  font-size: 11px;
+  opacity: 0.35;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+/* 操作栏 */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.btn {
+  background: rgba(245,240,230,0.08);
+  border: 1px solid rgba(200,190,170,0.2);
+  color: #d4c9b8;
+  padding: 10px 28px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn:hover {
+  background: rgba(245,240,230,0.15);
+  border-color: rgba(200,190,170,0.35);
+  color: #f5f0e8;
+}
+
+.btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+  transform: none;
+}
+
+.btn.primary {
+  background: rgba(194,58,43,0.15);
+  border-color: rgba(194,58,43,0.35);
+  color: rgba(194,58,43,0.8);
+}
+
+.btn.primary:hover {
+  background: rgba(194,58,43,0.25);
+}
+
+/* 页码 */
+.indicator {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dot-indicator {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: rgba(200,190,170,0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.dot-indicator.active {
+  background: rgba(194,58,43,0.6);
+  width: 20px;
+  border-radius: 3px;
+}
+
+/* 底部 */
+.footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0; right: 0;
+  text-align: center;
+  color: rgba(200,190,170,0.25);
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  z-index: 0;
+}
+
+/* loading */
+.loading {
+  font-size: 16px;
+  opacity: 0.6;
+  letter-spacing: 3px;
+  font-weight: 300;
+  padding: 60px 0;
+  color: #d4c9b8;
+}
+
+.loading::after {
+  content: '';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0%  { content: ''; }
+  25% { content: '.'; }
+  50% { content: '..'; }
+  75% { content: '...'; }
+}
+
+@media (max-width: 600px) {
+  body { align-items: flex-start; padding: 24px 0; }
+  .card { padding: 36px 24px 28px; border-radius: 4px; max-width: 100%; width: 94%; }
+  .meta { margin-bottom: 28px; gap: 10px; font-size: 12px; }
+  .meta .theme-tag { font-size: 11px; padding: 2px 10px; letter-spacing: 2px; }
+  .poem-lines { font-size: 20px; line-height: 2.2; letter-spacing: 2px; margin-bottom: 28px; min-height: 120px; }
+  .seal { font-size: 12px; margin-bottom: 24px; }
+  .poem-info { padding-top: 20px; }
+  .poem-title { font-size: 15px; }
+  .poem-author { font-size: 12px; }
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+  .indicator { margin-top: 16px; gap: 6px; }
+  .dot-indicator { width: 5px; height: 5px; }
+  .dot-indicator.active { width: 16px; }
+  .footer { font-size: 10px; bottom: 12px; }
+  .ink-wash-1 { width: 300px; height: 300px; }
+  .ink-wash-2 { width: 250px; height: 250px; }
+  .ink-wash-3 { display: none; }
+}
+</style>
+</head>
+<body class="default">
+<div class="ink-wash ink-wash-1"></div>
+<div class="ink-wash ink-wash-2"></div>
+<div class="ink-wash ink-wash-3"></div>
+<div class="petals" id="petals"></div>
+
+<div class="card" id="card">
+  <div class="loading">正在为你挑选今日诗词</div>
+</div>
+
+<div class="footer">每日诗词 · 每天一首，与你相伴</div>
+
+<script>
+let poems = [];
+let currentIndex = 0;
+let apiOffset = 0;
+const API_URL = 'https://daily-poem.vercel.app/api/poem';
+
+function createPetals() {
+  const container = document.getElementById('petals');
+  for (let i = 0; i < 15; i++) {
+    const p = document.createElement('div');
+    p.className = 'petal';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.width = (4 + Math.random() * 4) + 'px';
+    p.style.height = (6 + Math.random() * 6) + 'px';
+    p.style.animationDuration = (10 + Math.random() * 15) + 's';
+    p.style.animationDelay = (-Math.random() * 20) + 's';
+    container.appendChild(p);
+  }
+}
+createPetals();
+
+function renderPoem(index) {
+  const data = poems[index];
+  if (!data) return;
+  currentIndex = index;
+  document.body.className = data.theme_bg || 'default';
+
+  const linesHtml = data.lines.map((line, i) =>
+    `<div class="line" style="animation-delay:${0.15 + i * 0.12}s">${line}</div>`
+  ).join('');
+
+  const dotsHtml = poems.slice(0, 50).map((_, i) =>
+    `<div class="dot-indicator${i === index ? ' active' : ''}" onclick="renderPoem(${i})"></div>`
+  ).join('');
+  const moreDots = poems.length > 50 ? '<div class="dot-indicator" style="opacity:0.15">+</div>' : '';
+
+  // 印章文字：取标题前两字
+  const sealText = data.title.length >= 2 ? data.title.slice(0, 2) : data.title;
+
+  // 作者行：朝代 + 作者
+  const authorText = data.dynasty ? `${data.dynasty} · ${data.author}` : data.author;
+
+  // 类别标签
+  const catMap = { classical: '古诗词', modern: '现代诗', translated: '译诗' };
+  const catLabel = catMap[data.category] || '';
+
+  const card = document.getElementById('card');
+  card.style.animation = 'none';
+  card.offsetHeight;
+  card.style.animation = '';
+
+  card.innerHTML = `
+    <div class="meta">
+      <span>${poems._date || ''}</span>
+      <div class="dot"></div>
+      <span class="theme-tag">${data.theme}</span>
+    </div>
+    <div class="poem-lines">${linesHtml}</div>
+    <div class="seal">${sealText}</div>
+    <div class="poem-info">
+      <div class="poem-title">「${data.title}」</div>
+      <div class="poem-author">${authorText}</div>
+      ${catLabel ? `<div class="poem-category">${catLabel}</div>` : ''}
+    </div>
+    <div class="actions">
+      <button class="btn" onclick="renderPoem(currentIndex-1)" ${index === 0 ? 'disabled' : ''}>← 上一首</button>
+      <button class="btn primary" onclick="downloadCard()">保存卡片</button>
+      <button class="btn" onclick="fetchNext()">换一首 →</button>
+    </div>
+    <div class="indicator">${dotsHtml}${moreDots}</div>
+  `;
+}
+
+async function fetchNext() {
+  const card = document.getElementById('card');
+  card.innerHTML = '<div class="loading">正在挑选新的诗词</div>';
+  document.body.className = 'default';
+
+  try {
+    const res = await fetch(`${API_URL}?offset=${apiOffset}`);
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    apiOffset++;
+    poems.push(data);
+    renderPoem(poems.length - 1);
+  } catch (e) {
+    if (poems.length > 1) {
+      let next;
+      do { next = Math.floor(Math.random() * poems.length); } while (next === currentIndex && poems.length > 1);
+      renderPoem(next);
+    } else {
+      card.innerHTML = '<div style="opacity:0.8">获取失败，请稍后再试</div>';
+    }
+  }
+}
+
+function downloadCard() {
+  const data = poems[currentIndex];
+  if (!data) return;
+
+  const W = 1080, H = 1440;
+  const canvas = document.createElement('canvas');
+  canvas.width = W;
+  canvas.height = H;
+  const ctx = canvas.getContext('2d');
+
+  const bgMap = {
+    yearning: ['#1a1a2e','#16213e'], parting: ['#2d1b36','#1a1423'],
+    pastoral: ['#1b2e1b','#0f1f0f'], landscape: ['#1c2a3a','#0f1923'],
+    love: ['#3a1c1c','#2a0f0f'], spring: ['#2e1a2e','#1f0f1f'],
+    autumn: ['#2e2618','#1f1a0f'], contemplation: ['#1a2e2e','#0f1f1f'],
+    historical: ['#2e2218','#1f180f'], nostalgia: ['#1e2030','#141828'],
+    heroic: ['#2a1a1a','#1a0f0f'], graceful: ['#261a2e','#1a0f20'],
+    zen: ['#1a1a1a','#111111'], solitude: ['#141828','#0a0f1a'],
+    freedom: ['#1a2838','#0f1a28'], time: ['#2a1a28','#1a0f18'],
+    dream: ['#1a1a30','#0f0f20'], healing: ['#1e2a1e','#121a12'],
+    frontier: ['#2a2018','#1a1410'], night: ['#0f1420','#0a0e18'],
+  };
+  const colors = bgMap[data.theme_bg] || ['#1a1a2e','#0f0f20'];
+  const grad = ctx.createLinearGradient(0, 0, W, H);
+  grad.addColorStop(0, colors[0]);
+  grad.addColorStop(1, colors[1]);
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // 水墨晕染装饰
+  ctx.globalAlpha = 0.08;
+  ctx.fillStyle = '#c8beaa';
+  ctx.beginPath(); ctx.arc(200, 250, 280, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(W-160, H-200, 240, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(W*0.55, H*0.12, 120, 0, Math.PI*2); ctx.fill();
+  ctx.globalAlpha = 1;
+
+  // 卡片背景
+  const cx = 80, cy = 200, cw = W-160, ch = H-400, cr = 8;
+  ctx.fillStyle = 'rgba(245,240,230,0.06)';
+  ctx.beginPath();
+  ctx.moveTo(cx+cr, cy);
+  ctx.lineTo(cx+cw-cr, cy); ctx.quadraticCurveTo(cx+cw, cy, cx+cw, cy+cr);
+  ctx.lineTo(cx+cw, cy+ch-cr); ctx.quadraticCurveTo(cx+cw, cy+ch, cx+cw-cr, cy+ch);
+  ctx.lineTo(cx+cr, cy+ch); ctx.quadraticCurveTo(cx, cy+ch, cx, cy+ch-cr);
+  ctx.lineTo(cx, cy+cr); ctx.quadraticCurveTo(cx, cy, cx+cr, cy);
+  ctx.closePath();
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(200,190,170,0.15)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // 顶部朱红线
+  ctx.fillStyle = 'rgba(194,58,43,0.6)';
+  ctx.fillRect(W/2 - 40, cy + 30, 80, 3);
+
+  // 日期 + 主题
+  ctx.fillStyle = 'rgba(200,190,170,0.7)';
+  ctx.font = '26px "Noto Serif SC", serif';
+  ctx.textAlign = 'center';
+  const metaText = poems._date ? `${poems._date}  ·  ${data.theme}` : data.theme;
+  ctx.fillText(metaText, W/2, cy + 80);
+
+  // 诗词正文
+  ctx.fillStyle = '#f5f0e8';
+  ctx.font = '42px "Ma Shan Zheng", "Noto Serif SC", serif';
+  const lineY = cy + 160;
+  const lineH = 100;
+  data.lines.forEach((line, i) => {
+    ctx.fillText(line, W/2, lineY + i * lineH);
+  });
+
+  // 印章
+  const sealX = W/2 + 200;
+  const sealY = lineY + data.lines.length * lineH + 20;
+  ctx.strokeStyle = 'rgba(194,58,43,0.6)';
+  ctx.lineWidth = 3;
+  const sealText = data.title.length >= 2 ? data.title.slice(0, 2) : data.title;
+  const sw = 44, sh = sealText.length * 30 + 16;
+  ctx.strokeRect(sealX, sealY, sw, sh);
+  ctx.fillStyle = 'rgba(194,58,43,0.7)';
+  ctx.font = '24px "Ma Shan Zheng", serif';
+  ctx.textAlign = 'center';
+  sealText.split('').forEach((ch, i) => {
+    ctx.fillText(ch, sealX + sw/2, sealY + 28 + i * 28);
+  });
+
+  // 分割线
+  const sepY = lineY + data.lines.length * lineH + 80;
+  ctx.strokeStyle = 'rgba(200,190,170,0.12)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(W/2 - 180, sepY);
+  ctx.lineTo(W/2 + 180, sepY);
+  ctx.stroke();
+
+  // 诗词信息
+  ctx.fillStyle = '#f5f0e8';
+  ctx.font = '600 34px "Noto Serif SC", serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(`「${data.title}」`, W/2, sepY + 60);
+  ctx.fillStyle = 'rgba(200,190,170,0.6)';
+  ctx.font = '28px "Noto Serif SC", serif';
+  const authorLine = data.dynasty ? `${data.dynasty} · ${data.author}` : data.author;
+  ctx.fillText(authorLine, W/2, sepY + 105);
+
+  // 底部
+  ctx.fillStyle = 'rgba(200,190,170,0.2)';
+  ctx.font = '20px "Noto Serif SC", serif';
+  ctx.fillText('每日诗词', W/2, H - 50);
+
+  const link = document.createElement('a');
+  link.download = `诗词-${data.title}.png`;
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+}
+
+async function init() {
+  const card = document.getElementById('card');
+  try {
+    const res = await fetch('data.json');
+    const data = await res.json();
+    poems = data.poems || [];
+    poems._date = data.date;
+    if (poems.length === 0) {
+      card.innerHTML = '<div style="opacity:0.8">今日诗词还未生成，请稍后再来</div>';
+      return;
+    }
+    renderPoem(0);
+  } catch (e) {
+    card.innerHTML = '<div style="opacity:0.8">加载失败，请稍后再试</div>';
+  }
+}
+
+init();
+</script>
+</body>
+</html>
