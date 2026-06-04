@@ -363,8 +363,7 @@ body.default       { background: linear-gradient(160deg, #1a1a2e 0%, #0f0f20 100
 <script>
 let poems = [];
 let currentIndex = 0;
-let apiOffset = 0;
-const API_URL = 'https://daily-poem.vercel.app/api/poem';
+let onlinePoems = []; // 从网络获取的诗词
 
 function createPetals() {
   const container = document.getElementById('petals');
