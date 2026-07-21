@@ -1,80 +1,489 @@
 {
-  "date": "7月20日 周一",
-  "generated_at": "2026-07-20T04:35:07.695971",
+  "date": "7月21日 周二",
+  "generated_at": "2026-07-21T04:14:55.846111",
   "poems": [
     {
-      "title": "芙蓉楼送辛渐二首 一",
-      "author": "王昌龄",
+      "title": "闺怨二首 一",
+      "author": "沈如筠",
       "dynasty": "唐",
       "lines": [
-        "寒雨连天夜入湖，平明送客楚山孤。",
-        "洛阳亲友如相问，一片冰心在玉壶。"
-      ],
-      "category": "classical",
-      "theme": "离别",
-      "theme_bg": "parting"
-    },
-    {
-      "title": "春山夜月",
-      "author": "于良史",
-      "dynasty": "唐",
-      "lines": [
-        "春山多胜事，赏玩夜忘归。",
-        "掬水月在手，弄花香满衣。",
-        "兴来无远近，欲去惜芳菲。",
-        "南望鸣钟处，楼台深翠微。"
-      ],
-      "category": "classical",
-      "theme": "伤春",
-      "theme_bg": "spring"
-    },
-    {
-      "title": "杂曲歌辞 长相思三首 二",
-      "author": "李白",
-      "dynasty": "唐",
-      "lines": [
-        "日色已尽花含烟，月明欲素愁不眠。",
-        "赵瑟初停凤凰柱，蜀琴欲奏鸳鸯弦。",
-        "此曲有意无人传，愿随春风寄燕然，忆君迢迢隔青天。",
-        "昔日横波目，今成流泪泉。",
-        "不信妾肠断，归来看取明镜前。"
+        "鴈尽书难寄，愁多梦不成。",
+        "愿随孤月影，流照伏波营。"
       ],
       "category": "classical",
       "theme": "思念",
       "theme_bg": "yearning"
     },
     {
-      "title": "送荀道士归庐山",
-      "author": "李端",
+      "title": "答武陵田太守",
+      "author": "王昌龄",
       "dynasty": "唐",
       "lines": [
-        "先生归有处，欲别笑无言。",
-        "绿水到山口，青林连洞门。",
-        "月明寻石路，云霁望花源。",
-        "早晚还乘鹤，悲歌向故园。"
+        "仗劒行千里，微躯感一言。",
+        "曾为大梁客，不负信陵恩。"
       ],
       "category": "classical",
-      "theme": "乡愁",
-      "theme_bg": "nostalgia"
+      "theme": "田园",
+      "theme_bg": "pastoral"
     },
     {
-      "title": "春晚宴两相及礼官丽正殿学士探得风字",
-      "author": "明皇帝",
+      "title": "杂曲歌辞 宫中调笑 二",
+      "author": "王建",
       "dynasty": "唐",
       "lines": [
-        "乾道运无穷，恒将人代工。",
-        "阴阳调历象，礼乐报玄穹。",
-        "介胄清荒外，衣冠佐域中。",
-        "言谈延国辅，词赋引文雄。",
-        "野霁伊川绿，郊明巩树红。",
-        "冕旒多暇景，诗酒会春风。"
+        "胡蝶，胡蝶，飞上金花枝叶。",
+        "君前对舞春风，百叶桃花树红。",
+        "红树，红树，燕语莺啼日暮。"
+      ],
+      "category": "classical",
+      "theme": "时光",
+      "theme_bg": "time"
+    },
+    {
+      "title": "无题二首 一",
+      "author": "李商隐",
+      "dynasty": "唐",
+      "lines": [
+        "昨夜星辰昨夜风，画楼西畔桂堂东。",
+        "身无彩凤双飞翼，心有灵犀一点通。",
+        "隔座送钩春酒暖，分曹射复蜡灯红。",
+        "嗟余听鼓应官去，走马兰台类断蓬。"
+      ],
+      "category": "classical",
+      "theme": "爱情",
+      "theme_bg": "love"
+    },
+    {
+      "title": "思黯南墅赏牡丹",
+      "author": "刘禹锡",
+      "dynasty": "唐",
+      "lines": [
+        "偶然相遇人间世，合在增城阿姥家。",
+        "有此倾城好颜色，天教晚发赛诸花。"
+      ],
+      "category": "classical",
+      "theme": "咏物",
+      "theme_bg": "contemplation"
+    },
+    {
+      "title": "郊庙歌辞 封泰山乐章 凯安",
+      "author": "张说",
+      "dynasty": "唐",
+      "lines": [
+        "烈祖顺三灵，文宗威四海。",
+        "黄钺诛群盗，朱旗扫多罪。",
+        "戢兵天下安，约法人心改。",
+        "大哉干羽意，长见风云在。"
+      ],
+      "category": "classical",
+      "theme": "治愈",
+      "theme_bg": "healing"
+    },
+    {
+      "title": "相和歌辞 王昭君",
+      "author": "李商隐",
+      "dynasty": "唐",
+      "lines": [
+        "毛延寿画欲通神，忍为黄金不为人。",
+        "马上琵琶行万里，汉宫长有隔生春。"
       ],
       "category": "classical",
       "theme": "豪放",
       "theme_bg": "heroic"
     },
     {
-      "title": "横吹曲辞 出塞 一",
+      "title": "相和歌辞 杨叛儿",
+      "author": "李白",
+      "dynasty": "唐",
+      "lines": [
+        "君歌杨叛儿，妾劝新丰酒。",
+        "何许最关人，乌啼白门柳。",
+        "乌啼隐杨花，君醉留妾家。",
+        "博山炉中沈香火，双咽一气凌紫霞。"
+      ],
+      "category": "classical",
+      "theme": "山水",
+      "theme_bg": "landscape"
+    },
+    {
+      "title": "华岳庙二首 二",
+      "author": "王建",
+      "dynasty": "唐",
+      "lines": [
+        "自移西岳门长锁，一个行人一遍开。",
+        "上庙参天今见在，夜头风起觉神来。"
+      ],
+      "category": "classical",
+      "theme": "夜",
+      "theme_bg": "night"
+    },
+    {
+      "title": "腊日",
+      "author": "杜甫",
+      "dynasty": "唐",
+      "lines": [
+        "腊日常年暖尚遥，今年腊日冻全消。",
+        "侵陵雪色还萱草，漏泄春光有柳条。",
+        "纵酒欲谋良夜醉，还家初散紫宸朝。",
+        "口脂面药随恩泽，翠管银罂下九霄。"
+      ],
+      "category": "classical",
+      "theme": "自由",
+      "theme_bg": "freedom"
+    },
+    {
+      "title": "春游南亭",
+      "author": "韦应物",
+      "dynasty": "唐",
+      "lines": [
+        "川明气已变，岩寒云尚拥。",
+        "南亭草心绿，春塘泉脉动。",
+        "景煦听禽响，雨余看柳重。",
+        "逍遥池馆华，益媿专城宠。"
+      ],
+      "category": "classical",
+      "theme": "伤春",
+      "theme_bg": "spring"
+    },
+    {
+      "title": "初冬即事呈梦得",
+      "author": "白居易",
+      "dynasty": "唐",
+      "lines": [
+        "青毡帐暖喜微雪，红地炉深宜早寒。",
+        "走笔小诗能和否，泼醅新酒试尝看。",
+        "僧来乞食因留宿，客到开尊便共欢。",
+        "临老交亲零落尽，希君恕我取人宽。"
+      ],
+      "category": "classical",
+      "theme": "梦境",
+      "theme_bg": "dream"
+    },
+    {
+      "title": "冬夕",
+      "author": "岑参",
+      "dynasty": "唐",
+      "lines": [
+        "浩汗霜风刮天地，温泉火井无生意。",
+        "泽国龙蛇冻不伸，南山瘦柏消残翠。"
+      ],
+      "category": "classical",
+      "theme": "乡愁",
+      "theme_bg": "nostalgia"
+    },
+    {
+      "title": "晴江秋望",
+      "author": "崔季卿",
+      "dynasty": "唐",
+      "lines": [
+        "八月长江万里晴，千帆一道带风轻。",
+        "尽日不分天水色，洞庭南是岳阳城。"
+      ],
+      "category": "classical",
+      "theme": "悲秋",
+      "theme_bg": "autumn"
+    },
+    {
+      "title": "远师",
+      "author": "白居易",
+      "dynasty": "唐",
+      "lines": [
+        "东宫白庶子，南寺远禅师。",
+        "何处遥相见，心无一事时。"
+      ],
+      "category": "classical",
+      "theme": "禅意",
+      "theme_bg": "zen"
+    },
+    {
+      "title": "从军行七首 四",
+      "author": "王昌龄",
+      "dynasty": "唐",
+      "lines": [
+        "青海长云暗雪山，孤城遥望玉门关。",
+        "黄沙百战穿金甲，不破楼兰终不还。"
+      ],
+      "category": "classical",
+      "theme": "边塞",
+      "theme_bg": "frontier"
+    },
+    {
+      "title": "相和歌辞 凤吹笙曲",
+      "author": "李白",
+      "dynasty": "唐",
+      "lines": [
+        "仙人十五爱吹笙，学得昆丘彩凤鸣。",
+        "始闻炼气餐金液，复道朝天赴玉京。",
+        "玉京迢迢几千里，凤笙去去无边已。",
+        "欲叹离声发绛唇，更嗟别调流纤指。",
+        "此时惜别讵堪闻，此地相看未忍分。",
+        "重吟真曲和清吹，却奏仙歌响绿云。",
+        "绿云紫气向函关，访道应寻缑氏山。",
+        "莫学吹笙王子晋，一遇浮丘断不还。"
+      ],
+      "category": "classical",
+      "theme": "离别",
+      "theme_bg": "parting"
+    },
+    {
+      "title": "金谷园",
+      "author": "杜牧",
+      "dynasty": "唐",
+      "lines": [
+        "繁华事散逐香尘，流水无情草自春。",
+        "日暮东风怨啼鸟，落花犹似堕楼人。"
+      ],
+      "category": "classical",
+      "theme": "咏史",
+      "theme_bg": "historical"
+    },
+    {
+      "title": "王母赠魏夫人歌一章（幷序）",
+      "author": "项宗",
+      "dynasty": "唐",
+      "lines": [
+        "驾我八景舆，歘然入玉清。",
+        "龙裙拂霄汉，虎旗摄朱兵。",
+        "逍遥玄津际，万流无暂停。",
+        "哀此去留会，劫尽天地倾。",
+        "当尽无中景，不死亦无生。",
+        "体彼自然道，寂观合太冥。",
+        "南岳挺真翰，玉映曜颖精。",
+        "有任靡期事，虚心自受灵。",
+        "嘉会绛河内，相与乐未央。"
+      ],
+      "category": "classical",
+      "theme": "孤独",
+      "theme_bg": "solitude"
+    },
+    {
+      "title": "菩萨蛮 五",
+      "author": "韦庄",
+      "dynasty": "唐",
+      "lines": [
+        "洛阳城里春光好，洛阳才子他乡老。",
+        "柳暗魏王堤，此时心转迷。",
+        "桃花春水渌，水上鸳鸯浴。",
+        "凝恨对残晖，忆君君不知。"
+      ],
+      "category": "classical",
+      "theme": "婉约",
+      "theme_bg": "graceful"
+    },
+    {
+      "title": "满宫花",
+      "author": "张泌",
+      "dynasty": "唐",
+      "lines": [
+        "花正芳，楼似绮，寂寞上阳宫里。",
+        "钿笼金锁睡鸳鸯，帘冷露华珠翠。",
+        "娇艳轻盈香雪腻，细雨黄莺双起。",
+        "东风惆怅欲清明，公子桥边沈醉。"
+      ],
+      "category": "classical",
+      "theme": "孤独",
+      "theme_bg": "solitude"
+    },
+    {
+      "title": "题李别驾壁",
+      "author": "高适",
+      "dynasty": "唐",
+      "lines": [
+        "去乡不远逢知己，握手相欢得如此。",
+        "礼乐遥传鲁伯禽，宾客争过魏公子。",
+        "酒筵暮散明月上，枥马长鸣春风起。",
+        "一生称意能几人，今日从君问终始。"
+      ],
+      "category": "classical",
+      "theme": "时光",
+      "theme_bg": "time"
+    },
+    {
+      "title": "相和歌辞 明妃曲",
+      "author": "王偃",
+      "dynasty": "唐",
+      "lines": [
+        "北望单于日半斜，明君马上泣胡沙。",
+        "一双泪滴黄河水，应得东流入汉家。"
+      ],
+      "category": "classical",
+      "theme": "婉约",
+      "theme_bg": "graceful"
+    },
+    {
+      "title": "酬乐天扬州初逢席上见赠",
+      "author": "刘禹锡",
+      "dynasty": "唐",
+      "lines": [
+        "巴山楚水凄凉地，二十三年弃置身。",
+        "怀旧空吟闻篴赋，到乡翻似烂柯人。",
+        "沈舟侧畔千帆过，病树前头万木春。",
+        "今日听君歌一曲，暂凭杯酒长精神。"
+      ],
+      "category": "classical",
+      "theme": "禅意",
+      "theme_bg": "zen"
+    },
+    {
+      "title": "陌上桑",
+      "author": "李白",
+      "dynasty": "唐",
+      "lines": [
+        "美女渭桥东，春还事蚕作。",
+        "五马如飞龙，青丝结金络。",
+        "不知谁家子，调笑来相谑。",
+        "妾本秦罗敷，玉颜艳名都。",
+        "绿条映素手，采桑向城隅。",
+        "使君且不顾，况复论秋胡。",
+        "寒螀爱碧草，鸣凤栖青梧。",
+        "托心自有处，但怪旁人愚。",
+        "徒令白日暮，高驾空踟蹰。"
+      ],
+      "category": "classical",
+      "theme": "悲秋",
+      "theme_bg": "autumn"
+    },
+    {
+      "title": "题酒店壁",
+      "author": "王绩",
+      "dynasty": "唐",
+      "lines": [
+        "昨夜缾始尽，今朝瓮即开。",
+        "梦中占梦罢，还向酒家来。"
+      ],
+      "category": "classical",
+      "theme": "梦境",
+      "theme_bg": "dream"
+    },
+    {
+      "title": "长相思",
+      "author": "李白",
+      "dynasty": "唐",
+      "lines": [
+        "长相思，在长安，络纬秋啼金井阑。",
+        "微霜凄凄簟色寒，孤灯不明思欲绝。",
+        "卷帷望月空长叹，美人如花隔云端。",
+        "上有青冥之长天，下有渌水之波澜。",
+        "天长路远魂飞苦，梦魂不到关山难。",
+        "长相思，摧心肝。"
+      ],
+      "category": "classical",
+      "theme": "思念",
+      "theme_bg": "yearning"
+    },
+    {
+      "title": "送魏大从军",
+      "author": "陈子昂",
+      "dynasty": "唐",
+      "lines": [
+        "匈奴犹未灭，魏绛复从戎。",
+        "怅别三河道，言追六郡雄。",
+        "雁山横代北，狐塞接云中。",
+        "勿使燕然上，惟留汉将功。"
+      ],
+      "category": "classical",
+      "theme": "豪放",
+      "theme_bg": "heroic"
+    },
+    {
+      "title": "春雨",
+      "author": "李商隐",
+      "dynasty": "唐",
+      "lines": [
+        "怅卧新春白袷衣，白门寥落意多违。",
+        "红楼隔雨相望冷，珠箔飘灯独自归。",
+        "远路应悲春晼晚，残宵犹得梦依稀。",
+        "玉珰缄札何由达，万里云罗一雁飞。"
+      ],
+      "category": "classical",
+      "theme": "爱情",
+      "theme_bg": "love"
+    },
+    {
+      "title": "杂曲歌辞 于阗采花",
+      "author": "李白",
+      "dynasty": "唐",
+      "lines": [
+        "于阗采花人，自言花相似。",
+        "明妃一朝西入胡，胡中美女多羞死。",
+        "乃知汉地多名姝，胡中无花可方比。",
+        "丹青能令丑者妍，无盐翻在深宫里。",
+        "自古妬蛾眉，胡沙埋皓齿。"
+      ],
+      "category": "classical",
+      "theme": "咏史",
+      "theme_bg": "historical"
+    },
+    {
+      "title": "咏柳",
+      "author": "贺知章",
+      "dynasty": "唐",
+      "lines": [
+        "碧玉妆成一树高，万条垂下绿丝绦。",
+        "不知细叶谁裁出，二月春风似剪刀。"
+      ],
+      "category": "classical",
+      "theme": "伤春",
+      "theme_bg": "spring"
+    },
+    {
+      "title": "送邢桂州",
+      "author": "王维",
+      "dynasty": "唐",
+      "lines": [
+        "铙吹喧京口，风波下洞庭。",
+        "赭圻将赤岸，击汰复扬舲。",
+        "日落江湖白，潮来天地青。",
+        "明珠归合浦，应逐使臣星。"
+      ],
+      "category": "classical",
+      "theme": "离别",
+      "theme_bg": "parting"
+    },
+    {
+      "title": "野老",
+      "author": "杜甫",
+      "dynasty": "唐",
+      "lines": [
+        "野老篱前江岸回，柴门不正逐江开。",
+        "渔人网集澄潭下，贾客船随返照来。",
+        "长路关心悲劒阁，片云何意傍琴台。",
+        "王师未报收东郡，城阙秋生画角哀。"
+      ],
+      "category": "classical",
+      "theme": "田园",
+      "theme_bg": "pastoral"
+    },
+    {
+      "title": "相和歌辞 苦哉行五首 一",
+      "author": "戎昱",
+      "dynasty": "唐",
+      "lines": [
+        "彼鼠侵我厨，纵貍授梁肉。",
+        "鼠虽为君却，貍食自须足。",
+        "冀雪大国耻，飜是大国辱。",
+        "膻腥逼绮罗，甎瓦杂珠玉。",
+        "登楼非骋望，目笑是心哭。",
+        "何意天乐中，至今奏胡曲。"
+      ],
+      "category": "classical",
+      "theme": "自由",
+      "theme_bg": "freedom"
+    },
+    {
+      "title": "塞下曲 三",
+      "author": "李益",
+      "dynasty": "唐",
+      "lines": [
+        "黄河东流流九折，沙场埋恨何时绝。",
+        "蔡琰没去造胡笳，苏武归来持汉节。"
+      ],
+      "category": "classical",
+      "theme": "乡愁",
+      "theme_bg": "nostalgia"
+    },
+    {
+      "title": "出塞二首 一",
       "author": "王昌龄",
       "dynasty": "唐",
       "lines": [
@@ -86,460 +495,113 @@
       "theme_bg": "frontier"
     },
     {
-      "title": "箜篌谣",
-      "author": "李白",
+      "title": "唐享昊天乐 第十",
+      "author": "则天皇后",
       "dynasty": "唐",
       "lines": [
-        "攀天莫登龙，走山莫骑虎。",
-        "贵贱结交心不移，唯有严陵及光武。",
-        "周公称大圣，管蔡宁相容。",
-        "汉谣一斗粟，不与淮南舂。",
-        "兄弟尚路人，吾心安所从。",
-        "他人方寸间，山海几千重。",
-        "轻言托朋友，对面九疑峰。",
-        "开花必早落，桃李不如松。"
-      ],
-      "category": "classical",
-      "theme": "禅意",
-      "theme_bg": "zen"
-    },
-    {
-      "title": "古风 五十七",
-      "author": "李白",
-      "dynasty": "唐",
-      "lines": [
-        "羽族禀万化，小大各有依。",
-        "周周亦何辜，六翮掩不挥。",
-        "愿衔众禽翼，一向黄河飞。",
-        "飞者莫我顾，叹息将安归。"
-      ],
-      "category": "classical",
-      "theme": "咏史",
-      "theme_bg": "historical"
-    },
-    {
-      "title": "杂曲歌辞 长安少年行",
-      "author": "僧皎然",
-      "dynasty": "唐",
-      "lines": [
-        "翠楼春酒虾蟆陵，长安少年皆共矜。",
-        "纷纷半醉绿槐道，蹀躞花骢骄不胜。"
-      ],
-      "category": "classical",
-      "theme": "自由",
-      "theme_bg": "freedom"
-    },
-    {
-      "title": "题贾岛吟诗台",
-      "author": "张乔",
-      "dynasty": "唐",
-      "lines": [
-        "吟魂不复游，台亦似荒丘。",
-        "一径草中出，长江天外流。",
-        "暝烟寒鸟集，残月夜虫愁。",
-        "愿得生禾黍，锄平恨即休。"
-      ],
-      "category": "classical",
-      "theme": "婉约",
-      "theme_bg": "graceful"
-    },
-    {
-      "title": "秋日登扬州西灵塔",
-      "author": "李白",
-      "dynasty": "唐",
-      "lines": [
-        "宝塔凌苍苍，登攀览四荒。",
-        "顶高元气合，标出海云长。",
-        "万象分空界，三天接画梁。",
-        "水摇金刹影，日动火珠光。",
-        "鸟拂琼帘度，霞连绣栱张。",
-        "目随征路断，心逐去帆扬。",
-        "露浴梧楸白，霜催橘柚黄。",
-        "玉毫如可见，于此照迷方。"
-      ],
-      "category": "classical",
-      "theme": "悲秋",
-      "theme_bg": "autumn"
-    },
-    {
-      "title": "马诗二十三首 二",
-      "author": "李贺",
-      "dynasty": "唐",
-      "lines": [
-        "腊月草根甜，天街雪似盐。",
-        "未知口硬软，先拟蒺藜衔。"
-      ],
-      "category": "classical",
-      "theme": "夜",
-      "theme_bg": "night"
-    },
-    {
-      "title": "入朝洛堤步行",
-      "author": "上官仪",
-      "dynasty": "唐",
-      "lines": [
-        "脉脉广川流，驱马历长洲。",
-        "鹊飞山月曙，蝉噪野风秋。"
-      ],
-      "category": "classical",
-      "theme": "山水",
-      "theme_bg": "landscape"
-    },
-    {
-      "title": "玉阶怨",
-      "author": "李白",
-      "dynasty": "唐",
-      "lines": [
-        "玉阶生白露，夜久侵罗袜。",
-        "却下水晶帘，玲珑望秋月。"
-      ],
-      "category": "classical",
-      "theme": "孤独",
-      "theme_bg": "solitude"
-    },
-    {
-      "title": "啰唝曲六首 五",
-      "author": "刘采春",
-      "dynasty": "唐",
-      "lines": [
-        "昨日胜今日，今年老去年。",
-        "黄河清有日，白发黑无缘。"
-      ],
-      "category": "classical",
-      "theme": "时光",
-      "theme_bg": "time"
-    },
-    {
-      "title": "神鸡童谣",
-      "author": "不详",
-      "dynasty": "唐",
-      "lines": [
-        "生儿不用识文字，鬬鸡走马胜读书。",
-        "贾家小儿年十三，富贵荣华代不如。",
-        "能令金距期胜负，白罗绣衫随软舆。",
-        "父死长安千里外，差夫治道挽丧车。"
+        "肃肃祀典，邕邕礼秩。",
+        "三献已周，九成斯毕。",
+        "爰撤其俎，载迁其实。",
+        "或升或降，惟诚惟质。"
       ],
       "category": "classical",
       "theme": "治愈",
       "theme_bg": "healing"
     },
     {
-      "title": "曲池荷",
-      "author": "卢照邻",
-      "dynasty": "唐",
-      "lines": [
-        "浮香绕曲岸，圆影覆华池。",
-        "常恐秋风早，飘零君不知。"
-      ],
-      "category": "classical",
-      "theme": "咏物",
-      "theme_bg": "contemplation"
-    },
-    {
-      "title": "奉和展礼岱宗涂经濮济",
-      "author": "萧楚材",
-      "dynasty": "唐",
-      "lines": [
-        "拂汉星旗转，分霄日羽明。",
-        "将追会阜迹，更勒岱宗铭。",
-        "林戈咽济岸，兽鼓震河庭。",
-        "叶箭凌寒矫，鸟弓望晓惊。",
-        "已降汾水作，仍深迎渭情。"
-      ],
-      "category": "classical",
-      "theme": "爱情",
-      "theme_bg": "love"
-    },
-    {
-      "title": "夜到渔家",
-      "author": "张籍",
-      "dynasty": "唐",
-      "lines": [
-        "渔家在江口，潮水入柴扉。",
-        "行客欲投宿，主人犹未归。",
-        "竹深村路远，月出钓船稀。",
-        "遥见寻沙岸，春风动草衣。"
-      ],
-      "category": "classical",
-      "theme": "田园",
-      "theme_bg": "pastoral"
-    },
-    {
-      "title": "梦苏州水阁寄冯侍御",
-      "author": "白居易",
-      "dynasty": "唐",
-      "lines": [
-        "扬州驿里梦苏州，梦到花桥水阁头。",
-        "觉后不知冯侍御，此中昨夜共谁游。"
-      ],
-      "category": "classical",
-      "theme": "梦境",
-      "theme_bg": "dream"
-    },
-    {
-      "title": "寒食还陆浑别业",
-      "author": "宋之问",
-      "dynasty": "唐",
-      "lines": [
-        "洛阳城里花如雪，陆浑山中今始发。",
-        "旦别河桥杨柳风，夕卧伊川桃李月。",
-        "伊川桃李正芳新，寒食山中酒复春。",
-        "野老不知尧舜力，酣歌一曲太平人。"
-      ],
-      "category": "classical",
-      "theme": "山水",
-      "theme_bg": "landscape"
-    },
-    {
-      "title": "清明二首 二",
-      "author": "杜甫",
-      "dynasty": "唐",
-      "lines": [
-        "此身飘泊苦西东，右臂偏枯半耳聋。",
-        "寂寂系舟双下泪，悠悠伏枕左书空。",
-        "十年蹴鞠将雏远，万里秋千习俗同。",
-        "旅雁上云归紫塞，家人钻火用青枫。",
-        "秦城楼阁烟花里，汉主山河锦绣中。",
-        "风水春来洞庭阔，白苹愁杀白头翁。"
-      ],
-      "category": "classical",
-      "theme": "婉约",
-      "theme_bg": "graceful"
-    },
-    {
-      "title": "湘岸移木芙蓉植龙兴精舍",
+      "title": "巽公院五咏 苦竹桥",
       "author": "柳宗元",
       "dynasty": "唐",
       "lines": [
-        "有美不自蔽，安能守孤根。",
-        "盈盈湘西岸，秋至风露繁。",
-        "丽影别寒水，秾芳委前轩。",
-        "芰荷谅难杂，反此生高原。"
-      ],
-      "category": "classical",
-      "theme": "悲秋",
-      "theme_bg": "autumn"
-    },
-    {
-      "title": "别严士元",
-      "author": "刘长卿",
-      "dynasty": "唐",
-      "lines": [
-        "春风倚棹阖闾城，水国春寒阴复晴。",
-        "细雨湿衣看不见，闲花落地听无声。",
-        "日斜江上孤帆影，草绿湖南万里情。",
-        "东道若逢相识问，青袍今日误儒生。"
-      ],
-      "category": "classical",
-      "theme": "离别",
-      "theme_bg": "parting"
-    },
-    {
-      "title": "捣衣",
-      "author": "沈宇",
-      "dynasty": "唐",
-      "lines": [
-        "日暮远天青，霜风入后庭。",
-        "洞房寒未掩，砧杵夜泠泠。"
-      ],
-      "category": "classical",
-      "theme": "时光",
-      "theme_bg": "time"
-    },
-    {
-      "title": "相和歌辞 野田黄雀行",
-      "author": "李白",
-      "dynasty": "唐",
-      "lines": [
-        "游莫逐炎洲翠，栖莫近吴宫燕。",
-        "吴宫火起焚尔窠，炎洲逐翠遭网罗。"
-      ],
-      "category": "classical",
-      "theme": "田园",
-      "theme_bg": "pastoral"
-    },
-    {
-      "title": "戏题盘石",
-      "author": "王维",
-      "dynasty": "唐",
-      "lines": [
-        "可怜盘石临泉水，复有垂杨拂酒杯。",
-        "若道春风不解意，何因吹送落花来。"
-      ],
-      "category": "classical",
-      "theme": "伤春",
-      "theme_bg": "spring"
-    },
-    {
-      "title": "和乐天春词",
-      "author": "刘禹锡",
-      "dynasty": "唐",
-      "lines": [
-        "新妆面面下朱楼，深锁春光一院愁。",
-        "行到中庭数花朵，蜻蜓飞上玉搔头。"
-      ],
-      "category": "classical",
-      "theme": "孤独",
-      "theme_bg": "solitude"
-    },
-    {
-      "title": "长安述怀",
-      "author": "徐夤",
-      "dynasty": "唐",
-      "lines": [
-        "黄河冰合尚来游，知命知时肯躁求。",
-        "词赋有名堪自负，春风落第不曾羞。",
-        "风尘色里凋双鬓，[鼙]鼓声中历几州。",
-        "十载公卿早言屈，何须课夏更冥搜。"
-      ],
-      "category": "classical",
-      "theme": "治愈",
-      "theme_bg": "healing"
-    },
-    {
-      "title": "前有别杨柳枝绝句梦得继和云春尽絮飞留不得随风好去落谁家又复戏答",
-      "author": "白居易",
-      "dynasty": "唐",
-      "lines": [
-        "柳老春深日又斜，任他飞向别人家。",
-        "谁能更学孩童戏，寻逐春风捉柳花。"
-      ],
-      "category": "classical",
-      "theme": "梦境",
-      "theme_bg": "dream"
-    },
-    {
-      "title": "拜新月",
-      "author": "李端",
-      "dynasty": "唐",
-      "lines": [
-        "开帘见新月，便即下阶拜。",
-        "细语人不闻，北风吹裙带。"
-      ],
-      "category": "classical",
-      "theme": "夜",
-      "theme_bg": "night"
-    },
-    {
-      "title": "应诏赋得除夜",
-      "author": "史青",
-      "dynasty": "唐",
-      "lines": [
-        "今岁今宵尽，明年明日催。",
-        "寒随一夜去，春逐五更来。",
-        "气色空中改，容颜暗里回。",
-        "风光人不觉，已著后园梅。"
+        "危桥属幽径，缭绕穿疎林。",
+        "迸箨分苦节，轻筠抱虚心。",
+        "俯瞰涓涓流，仰聆萧萧吟。",
+        "差池下烟日，嘲异常鸣山禽。",
+        "谅无要津用，栖息有余阴。"
       ],
       "category": "classical",
       "theme": "咏物",
       "theme_bg": "contemplation"
     },
     {
-      "title": "夕次蒲类津",
-      "author": "骆宾王",
+      "title": "春宫曲",
+      "author": "王昌龄",
       "dynasty": "唐",
       "lines": [
-        "二庭归望断，万里客心愁。",
-        "山路犹南属，河源自北流。",
-        "晚风连朔气，新月照边秋。",
-        "灶火通军壁，烽烟上戍楼。",
-        "龙庭但苦战，燕颔会封侯。",
-        "莫作兰山下，空令汉国羞。"
+        "昨夜风开露井桃，未央前殿月轮高。",
+        "平阳歌舞新承宠，帘外春寒赐锦袍。"
       ],
       "category": "classical",
-      "theme": "边塞",
-      "theme_bg": "frontier"
+      "theme": "夜",
+      "theme_bg": "night"
     },
     {
-      "title": "杂曲歌辞 游侠行",
-      "author": "孟郊",
+      "title": "夏日奉使南海在道中作",
+      "author": "张九龄",
       "dynasty": "唐",
       "lines": [
-        "壮士性刚决，火中见石裂。",
-        "杀人不回头，轻生如暂别。",
-        "岂知眼有泪，肯白头上发。",
-        "平生无恩酬，劒闲一百月。"
+        "缅然万里露，赫曦三伏时。",
+        "飞走逃深林，流烁恐生疵。",
+        "行李岂无苦，而我方自怡。",
+        "肃事诚在公，拜庆遂及私。",
+        "展力慙浅效，衔恩感深慈。",
+        "且欲汤火蹈，况无鬼神欺。",
+        "朝发高山阿，夕济长江湄。",
+        "秋瘴宁我毒，夏水胡不夷。",
+        "信知道存者，但问心所之。",
+        "吕梁有出入，乃觉非虚词。"
       ],
       "category": "classical",
-      "theme": "豪放",
-      "theme_bg": "heroic"
+      "theme": "山水",
+      "theme_bg": "landscape"
     },
     {
-      "title": "教我如何不想她",
-      "author": "刘半农",
-      "dynasty": "",
+      "title": "明君词",
+      "author": "王偃",
+      "dynasty": "唐",
       "lines": [
-        "天上飘着些微云，",
-        "地上吹着些微风。",
-        "啊！",
-        "微风吹动了我头发，",
-        "教我如何不想她？"
+        "北望单于日半斜，明君马上泣胡沙。",
+        "一双泪滴黄河水，应得东流入汉家。"
       ],
-      "category": "modern",
+      "category": "classical",
+      "theme": "婉约",
+      "theme_bg": "graceful"
+    },
+    {
+      "title": "北岳庙",
+      "author": "贾岛",
+      "dynasty": "唐",
+      "lines": [
+        "天地有五岳，恒岳居其北。",
+        "岩峦叠万重，诡怪浩难测。",
+        "人来不敢入，祠宇白日黑。",
+        "有时起霖雨，一洒天地德。",
+        "神兮安在哉，永康我王国。"
+      ],
+      "category": "classical",
+      "theme": "治愈",
+      "theme_bg": "healing"
+    },
+    {
+      "title": "杂曲歌辞 君子有所思行",
+      "author": "李白",
+      "dynasty": "唐",
+      "lines": [
+        "紫阁连终南，青冥天倪色。",
+        "凭崖望咸阳，宫阙罗北极。",
+        "万井惊画出，九衢如弦直。",
+        "渭水清银河，横天流不息。",
+        "朝野盛文物，衣冠何翕赩。",
+        "廐马散连山，军容威绝域。",
+        "伊皐运元化，卫霍输筋力。",
+        "歌钟乐未休，荣去老还逼。",
+        "圆光过满缺，太阳移中昃。",
+        "不散东海金，何争西辉匿。",
+        "无作牛山悲，恻怆泪沾臆。"
+      ],
+      "category": "classical",
       "theme": "思念",
       "theme_bg": "yearning"
-    },
-    {
-      "title": "九月九日登玄武山",
-      "author": "卢照邻",
-      "dynasty": "唐",
-      "lines": [
-        "九月九日眺山川，归心归望积风烟。",
-        "他乡共酌金花酒，万里同悲鸿雁天。"
-      ],
-      "category": "classical",
-      "theme": "乡愁",
-      "theme_bg": "nostalgia"
-    },
-    {
-      "title": "早冬",
-      "author": "白居易",
-      "dynasty": "唐",
-      "lines": [
-        "十月江南天气好，可怜冬景似春华。",
-        "霜经未杀萋萋草，日暖初干漠漠沙。",
-        "老柘叶黄如嫩树，寒樱枝白是狂花。",
-        "此时却羡闲人醉，五马无由入酒家。"
-      ],
-      "category": "classical",
-      "theme": "自由",
-      "theme_bg": "freedom"
-    },
-    {
-      "title": "八阵图",
-      "author": "杜甫",
-      "dynasty": "唐",
-      "lines": [
-        "功盖三分国，名高八阵图。",
-        "江流石不转，遗恨失吞吴。"
-      ],
-      "category": "classical",
-      "theme": "咏史",
-      "theme_bg": "historical"
-    },
-    {
-      "title": "将赴吴兴登乐游原一绝",
-      "author": "杜牧",
-      "dynasty": "唐",
-      "lines": [
-        "清时有味是无能，闲爱孤云静爱僧。",
-        "欲把一麾江海去，乐游原上望昭陵。"
-      ],
-      "category": "classical",
-      "theme": "禅意",
-      "theme_bg": "zen"
-    },
-    {
-      "title": "赠去婢",
-      "author": "崔郊",
-      "dynasty": "唐",
-      "lines": [
-        "公子王孙逐后尘，绿珠垂泪滴罗巾。",
-        "侯门一入深如海，从此萧郎是路人。"
-      ],
-      "category": "classical",
-      "theme": "爱情",
-      "theme_bg": "love"
     },
     {
       "title": "银河吹笙",
@@ -556,124 +618,87 @@
       "theme_bg": "love"
     },
     {
-      "title": "帝京篇十首 五",
-      "author": "太宗皇帝",
-      "dynasty": "唐",
-      "lines": [
-        "芳辰追逸趣，禁苑信多奇。",
-        "桥形通汉上，峰势接云危。",
-        "烟霞交隐映，花鸟自参差。",
-        "何如肆辙迹？万里赏瑶池。"
-      ],
-      "category": "classical",
-      "theme": "豪放",
-      "theme_bg": "heroic"
-    },
-    {
-      "title": "奉送五叔入京兼寄綦毋三",
-      "author": "李颀",
-      "dynasty": "唐",
-      "lines": [
-        "云阴带残日，怅别此何时。",
-        "欲望黄山道，无由见所思。"
-      ],
-      "category": "classical",
-      "theme": "思念",
-      "theme_bg": "yearning"
-    },
-    {
-      "title": "中秋月二首 二",
+      "title": "同赋山居七夕",
       "author": "李峤",
       "dynasty": "唐",
       "lines": [
-        "圆魄上寒空，皆言四海同。",
-        "安知千里外，不有雨兼风。"
+        "明月青山夜，高天白露秋。",
+        "花庭开粉席，云岫敞针楼。",
+        "石类支机影，池似泛槎流。",
+        "暂惊河女鹊，终狎野人鸥。"
       ],
       "category": "classical",
-      "theme": "禅意",
-      "theme_bg": "zen"
+      "theme": "夜",
+      "theme_bg": "night"
     },
     {
-      "title": "郊庙歌辞 封泰山乐章 豫和 一",
-      "author": "张说",
+      "title": "宫词",
+      "author": "后主衍",
       "dynasty": "唐",
       "lines": [
-        "款泰坛，柴泰清。",
-        "受天命，报天成。",
-        "竦皇心，荐乐声。",
-        "志上达，歌下迎。"
-      ],
-      "category": "classical",
-      "theme": "山水",
-      "theme_bg": "landscape"
-    },
-    {
-      "title": "长沙别李六侍御",
-      "author": "贾至",
-      "dynasty": "唐",
-      "lines": [
-        "月明湘水白，霜落洞庭干。",
-        "放逐长沙外，相逢路正难。",
-        "云归帝乡远，鴈报朔方寒。",
-        "此别盈襟泪，雍门不假弹。"
-      ],
-      "category": "classical",
-      "theme": "乡愁",
-      "theme_bg": "nostalgia"
-    },
-    {
-      "title": "赠内",
-      "author": "李白",
-      "dynasty": "唐",
-      "lines": [
-        "三百六十日，日日醉如泥。",
-        "虽为李白妇，何异太常妻。"
+        "辉辉赫赫浮玉云，宣华池上月华新。",
+        "月华如水浸宫殿，有酒不醉真痴人。"
       ],
       "category": "classical",
       "theme": "自由",
       "theme_bg": "freedom"
     },
     {
-      "title": "寒食城东即事",
-      "author": "王维",
+      "title": "奉陪封大夫九日登高",
+      "author": "岑参",
       "dynasty": "唐",
       "lines": [
-        "清溪一道穿桃李，演漾绿蒲涵白芷。",
-        "溪上人家凡几家，落花半落东流水。",
-        "蹴鞠屡过飞鸟上，秋千竞出垂杨里。",
-        "少年分日作遨游，不用清明兼上巳。"
+        "九日黄花酒，登高会昔闻。",
+        "霜威逐亚相，杀气傍中军。",
+        "横笛惊征雁，娇歌落塞云。",
+        "边头幸无事，醉舞荷吾君。"
       ],
       "category": "classical",
-      "theme": "治愈",
-      "theme_bg": "healing"
+      "theme": "乡愁",
+      "theme_bg": "nostalgia"
     },
     {
-      "title": "酒泉子 四",
-      "author": "顾敻",
+      "title": "雪",
+      "author": "王烈",
       "dynasty": "唐",
       "lines": [
-        "黛薄红深，约掠绿鬟云腻。",
-        "小鸳鸯，金翡翠，称人心。",
-        "锦鳞无处传幽意，海燕兰堂春又去。",
-        "隔年书，千点泪，恨难任。"
+        "雪飞当梦蝶，风度几惊人。",
+        "半夜一窗晓，平明千树春。",
+        "花园应失路，白屋忽为邻。",
+        "散入仙厨里，还如云母尘。"
       ],
       "category": "classical",
-      "theme": "孤独",
-      "theme_bg": "solitude"
+      "theme": "梦境",
+      "theme_bg": "dream"
     },
     {
-      "title": "咏槿",
-      "author": "李白",
+      "title": "相和歌辞 王昭君",
+      "author": "刘长卿",
       "dynasty": "唐",
       "lines": [
-        "园花笑芳年，池草艳春色。",
-        "犹不如槿花，婵娟玉阶侧。",
-        "芬荣何夭促，零落在瞬息。",
-        "岂若琼树枝，终岁长翕赩。"
+        "自矜妖艳色，不顾丹青人。",
+        "那知粉缋能相负，却使容华飜误身。",
+        "上马辞君嫁骄虏，玉颜对人啼不语。",
+        "北风雁急浮清秋，万里独见黄河流。",
+        "纤腰不复汉宫宠，双蛾长向胡天愁。",
+        "琵琶弦中苦调多，萧萧羌笛声相和。",
+        "可怜一曲传乐府，能使千秋伤绮罗。"
       ],
       "category": "classical",
-      "theme": "咏物",
-      "theme_bg": "contemplation"
+      "theme": "悲秋",
+      "theme_bg": "autumn"
+    },
+    {
+      "title": "杂曲歌辞 胡渭州 一",
+      "author": "不详",
+      "dynasty": "唐",
+      "lines": [
+        "亭亭孤月照行舟，寂寂长江万里流。",
+        "乡国不知何处是？云山漫漫使人愁。"
+      ],
+      "category": "classical",
+      "theme": "山水",
+      "theme_bg": "landscape"
     }
   ]
 }
